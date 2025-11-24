@@ -1,0 +1,137 @@
+/* MYSTIC TEXTURED DARK BACKGROUND */
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif; /* changed to Times New Roman */
+    background: radial-gradient(circle at top, #0a0f2b, #020414 60%, #00010a),
+                repeating-linear-gradient(  
+                    45deg,
+                    rgba(255,255,255,0.02) 0px,
+                    rgba(255,255,255,0.02) 2px,
+                    rgba(0,0,0,0.02) 2px,
+                    rgba(0,0,0,0.02) 4px
+                );
+    color: #e8ecff;
+}
+
+/* HEADER */
+
+/* HEADER */
+header {
+    position: relative; /* to position heading and logo independently */
+    padding: 15px 20px;
+    height: 80px; /* reserve space for header */
+}
+
+/* Logo on top-left */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* vertically center logo */
+    width: 80px; /* bigger logo */
+    height: auto;
+}
+
+/* Heading centered */
+header h1 {
+    font-size: 40px; /* matches logo size */
+    color: #bbd2f4;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    margin: 0;
+    line-height: 80px; /* vertically center heading in header */
+}
+
+
+/* TABS */
+.tabs {
+    text-align: center;
+    margin-top: 5px;
+}
+.tabs button {
+    background: #001f66;
+    color: white;
+    padding: 10px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Times New Roman", serif; /* Times New Roman for buttons */
+}
+.tabs button:hover {
+    background: #0033aa;
+}
+
+/* CONTROLS */
+#controls {
+    margin: 15px;
+}
+#controls button {
+    background: #0033aa;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Times New Roman", serif; /* Times New Roman for buttons */
+}
+
+/* DECK */
+#deck {
+    float: left;
+    width: 280px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    padding: 15px;
+}
+.card {
+    width: 42px;
+    height: 72px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* SPREAD AREA */
+#spread {
+    margin-left: 350px;
+    min-height: 530px;
+    position: relative;
+}
+
+/* SLOT */
+.slot {
+    width: 85px;
+    height: 140px;
+    border: 2px dashed #88a4ff;
+    position: absolute;
+    border-radius: 6px;
+}
+
+/* MEANINGS AREA */
+#meanings-box {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid #3b7fff;
+    border-radius: 10px;
+    color: white;
+    font-family: "Times New Roman", serif; /* Times New Roman for meanings */
+}
+
+#meanings-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #7ab4ff;
+    font-size: 22px;
+    font-family: "Times New Roman", serif; /* Times New Roman for headings */
+}
+
+#meanings {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: pre-line;
+    font-family: "Times New Roman", serif; /* Times New Roman for card meanings */
+}
