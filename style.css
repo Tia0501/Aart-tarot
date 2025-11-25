@@ -115,7 +115,7 @@ header h1 {
     margin: 40px auto;
     padding: 20px;
     background: rgba(0,0,0,0.5);
-    border: 2px solid #3b7fff;
+    border: 2px solid rgba(0,0,0,0.5);
     border-radius: 10px;
     color: white;
     font-family: "Times New Roman", serif; /* Times New Roman for meanings */
